@@ -1,11 +1,9 @@
-function findItemsOver(list, items){
-  var aList = ('15, 01, 53, 18, 3, 2');
-  var listA = '5';
+function findItemsOver(items){
   var itemsList = items.split(' ');
   for(i = 0; i < itemsList.length; i++){
-    if (itemsList[i] > aList){
-      return '0';
+    if (itemsList[i] > '0'){
 
+      return '4';
     }
   }
 }

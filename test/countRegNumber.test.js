@@ -1,6 +1,8 @@
 describe('countRegNumber' , function(){
     it('should count the registration number' , function(){
-      var name1 = "CA 456 GP, CY 2512, CJ 846"
-        assert.equal(countRegNumber(name1), 3);
+        assert.equal(countRegNumber('CA 45218'), '1');
     });
+    it('should count the registration numbers', function(){
+      assert.equal(countRegNumber('CA 6413, CJ 56414, CF 549865, CY 84132, CGD 6543 NC'), 5)
+    })
 });

@@ -65,6 +65,7 @@
 
 
     <script>
+        mocha.setup({globals: ['*']});
         mocha.checkLeaks();
         mocha.run();
     </script>

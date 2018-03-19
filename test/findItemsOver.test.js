@@ -1,7 +1,8 @@
 describe('findItemsOver' , function(){
     it('should return items over  ' , function(){
-      var list = ('27, 18, 32, 9, 21, 13, 24, 42');
-      var items = '0';
-        assert.equal(findItemsOver20(list), items);
+        assert.equal(findItemsOver20('21, 54, 12, 89, 01'), '3');
     });
+    it('should return items over', function(){
+      assert.equal(findItemsOver('20,21,35,87,03,45'), '4')
+    })
 });

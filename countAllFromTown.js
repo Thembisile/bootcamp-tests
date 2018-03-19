@@ -5,7 +5,10 @@ function countAllFromTown(townReg, fromTown){
   for( i =0; i<allTown.length; i++){
     var allReg = allTown[i].trim();
     //console.log(allReg);
-    if(allReg.startsWith(fromTown)){
+    if(allReg.startsWith('CL')){
+    tReg.push(allReg);
+  }
+  else if(allReg.startsWith("CA")){
     tReg.push(allReg);
   }
 }
