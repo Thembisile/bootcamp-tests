@@ -21,4 +21,8 @@ describe('findItemsOver', function(){
 ];
     assert.notEqual(findItemsOver(itemList, threshold), [{name:'apples', qty: 37},{name: 'apples', qty: 10},]);
   });
+  it('should return no quantity if there is no items in the list', function(){
+    var items = [''];
+    assert.equal(findItemsOver(items), '')
+  })
 });

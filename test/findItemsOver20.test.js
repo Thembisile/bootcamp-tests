@@ -18,5 +18,9 @@ describe('findItemsOver20', function(){
   ];
   assert.notEqual(findItemsOver20(itemList), [{name : 'apples', qty : 10},
   {name : 'apples', qty : 3},]);
-});
+  });
+  it('should return nothing if there is no items in List', function(){
+    var list = [''];
+    assert.equal(findItemsOver20(list), '')
+  })
 });
