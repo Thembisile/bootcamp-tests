@@ -1,10 +1,10 @@
 function findItemsOver20(itemsList){
-  var allItems = itemsList.split(', ');
-  for (i = 0; i < allItems.length; i++ ){
-    if (allItems[i] > 20){
-      var items = allItems[i].length
+  var Items = itemsList.split(', ');
+  for (i = 0; i < Items.length; i++ ){
+    if (Items[i] >= 20){
+      var itemsOver = Items[i].length;
 
-      return items;
+      return itemsOver;
     }
   }
 }

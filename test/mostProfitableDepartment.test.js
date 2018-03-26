@@ -19,6 +19,18 @@ describe('mostProfitableDepartment' , function(){
       ];
         assert.equal(mostProfitableDepartment(salesData), 'outdoor');
     });
+    it('should return the most profitable department on different set of data', function(){
+      var salesData = [
+                      {department : 'education', sales : 80950},
+                      {department : 'housing', sales : 15080},
+                      {department : 'health', sales : 95020},
+                      {department : 'water', sales : 55004}
+    ];
+      assert.equal(mostProfitableDepartment(salesData), 'health');
+    })
+    it('should return nothing when no dataset is available', function(){
+      assert.equal(mostProfitableDepartment(''), ' ')
+    })
   });
   describe('mostProfitableDay', function(){
     it('should return the most profitable day', function(){
@@ -40,5 +52,17 @@ describe('mostProfitableDepartment' , function(){
         {department : 'carpentry', sales : 16109, day : 'Friday'},
       ];
       assert.equal(mostProfitableDay(salesData), 'Thursday');
+    })
+    it('should return the most profitable day on different set of data', function(){
+      var salesData = [
+                      {department : 'education', sales : 80950, day : 'Tuesday'},
+                      {department : 'housing', sales : 15080, day : 'Friday'},
+                      {department : 'health', sales : 95020, day : 'Monday'},
+                      {department : 'water', sales : 55004, day : 'Thursday'},
+    ];
+      assert.equal(mostProfitableDay(salesData), 'Monday');
+    })
+    it('should return nothing when no dataset is available', function(){
+      assert.equal(mostProfitableDay(''), ' ')
     })
 });
