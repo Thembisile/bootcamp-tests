@@ -1,10 +1,16 @@
-function findItemsOver(items){
-  var itemsList = items.split(', ');
-  for(i = 0; i < itemsList.length; i++){
-    if (itemsList[i] > 0){
-      var items = itemsList[i].length;
-
-      return items;
+//Create another function called findItemsOver
+var findItemsOver = function(itemList, threshold){
+  console.log(itemList);
+  // Create an empty list to store all the returned all the names
+  var lItems = [];
+  //loop through the list
+  for(var i=0; i<itemList.length; i++){
+    //Declare an a variable to store the list
+    var listItems = itemList[i];
+    //compare list with threshold.
+    if(listItems.qty > threshold){
+      lItems.push(listItems);
     }
   }
+  return lItems;
 }

@@ -6,7 +6,7 @@ var sms = 0;
 var phoneBill = Phone.split(', ');
   for ( i= 0; i<phoneBill.length; i++){
     var allMade = phoneBill[i]
-    if(phoneBill[i].startsWith('c')){
+    if(allMade.startsWith('c')){
       call = call + 1;
 
     }
