@@ -30,6 +30,6 @@ describe('findItemsOver20', function(){
       {name : 'bananas', qty : 7},
       {name : 'apples', qty : 3},
     ];
-    assert.notEqual(findItemsOver20(itemList), [])
+    assert.equal(findItemsOver20(''), '')
   })
 });
